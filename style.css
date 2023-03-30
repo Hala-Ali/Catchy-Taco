@@ -1,0 +1,22 @@
+body {
+    background-color: pink;
+    font-family: 'Optima', Arial, sans-serif;
+}
+
+.card-img-top {
+    object-fit: none;
+    object-position: center;
+    height: 500px;
+}
+
+h1 {
+    align-text: center;
+}
+
+h5 {
+    color: purple;
+}
+
+h4 {
+    color: blue;
+}
