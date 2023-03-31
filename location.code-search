@@ -1,0 +1,11 @@
+# Query: location
+# ContextLines: 1
+
+2 results - 1 file
+
+about.html:
+  64              </div>
+  65:             <div class="col text-center" id="locations">
+  66                  <img src="locations.png" id="hours-logo">
+  67:                 <h3>LOCATIONS</h3>
+  68                  <h4>Bellingham Farmer's Market</h4>
