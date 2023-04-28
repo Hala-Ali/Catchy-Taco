@@ -16,3 +16,13 @@ class ItemsController {
         this.items.push(item);
     }
 }
+
+function loadItemsFromLocalStorage() {
+    const storageItems = localStorage.getItem("items");
+    if (storageItems) {
+        const _items = JSON.parse(storageItems);
+        this.items = _items;
+    }
+}
+
+itemsController = new ItemsController
