@@ -11,8 +11,7 @@ class ItemsController {
             description: description,
             img: img,
             createdAt: createdAt,
-        };
-        
+        };     
         this.items.push(item);
     }
 }

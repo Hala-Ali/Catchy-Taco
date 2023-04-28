@@ -12,8 +12,8 @@ function addItemCard(img, itemName, desc) {
     </div>
 </div>`;
     $('item-list').innerHTML += codeBlock;
-    console.log('tried it.');
-}
+    
+    }
 
-// const sampleItems = [ItemsController.items];
+
 // localStorage.setItem('items', JSON.stringify(sampleItems));
