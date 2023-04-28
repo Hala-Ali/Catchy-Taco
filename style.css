@@ -22,7 +22,7 @@ h4 {
 }
 
 h1 {
-    position: absolute;
+    text-align: center;
     top: 100px;
     right: 700px;
 }
@@ -32,10 +32,6 @@ h1 {
     overflow: hidden;
     background:rgb(234, 206, 209);
     margin: 50px auto;
-}
-.container ul{
-    padding: 0px;
-    margin: 0px
 }
 
 .container ul li{
@@ -63,6 +59,12 @@ h1 {
     background: red;
     text-align: center;
 }
+
+#tacoplate {
+    min-width: 100%;
+    height: auto;
+}
+
 @media  screen and (max-width:1250px){
     .container ul li{
         width: 40%;
