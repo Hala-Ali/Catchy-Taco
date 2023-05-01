@@ -4,15 +4,15 @@ class ItemsController {
         this.currentId = 0;
     }
     addItem(name, description, img, createdAt) {
-
+        itemsController.currentId++;
         const item = {
-            id: this.currentId++,
+            id: this.currentId,
             name: name,
             description: description,
             img: img,
             createdAt: createdAt,
-        };     
-        this.items.push(item);
+        };
+        itemsController.items.push(item);
     }
 }
 
@@ -24,4 +24,3 @@ function loadItemsFromLocalStorage() {
     }
 }
 
-itemsController = new ItemsController

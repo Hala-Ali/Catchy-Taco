@@ -36,9 +36,9 @@
                     <label for="pw">Password</label>
                     <input type="password" class="form-control" name="pw" id="pw" placeholder="******">
                 </div>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#addItem" aria-expanded="false" aria-controls="addItem">
-                    Button with data-target
-                  </button>
+                <button class="btn btn-primary" type="button" id="add_item_button">
+                    Log In
+                </button>
             </div>
             <div class="col-6">
                 <h2>Please log in to edit the menu.</h2>
@@ -52,6 +52,23 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div>
+            <div class="form-group">
+                <label for="item-name">Item name</label>
+                <input type="text" class="form-control" name="item-name" id="item-name" placeholder="taco">
+            </div>
+            <div class="form-group">
+                <label for="item-desc">Item description</label>
+                <input type="text" class="form-control" name="item-desc" id="item-desc" placeholder="delicious!">
+            </div>
+            <div class="form-group">
+                <label for="item-image">Item image link</label>
+                <input type="text" class="form-control" name="item-img" id="item-img" placeholder="example.jpg">
+            </div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#addItem" aria-expanded="false" aria-controls="addItem">
+                Submit
+            </button>
         </div>
         <div id = "list-items">
             <div class="row" id="columns-holder">

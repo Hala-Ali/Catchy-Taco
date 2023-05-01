@@ -1,8 +1,7 @@
 const $ = (_) => document.getElementById(_);
 
-// const controller = new ItemsController;
+itemsController = new ItemsController;
 
-console.log("Hello");
 function addItemCard(img, itemName, desc) {
     let codeBlock = `<div class="card border-primary" style="margin-bottom: 20px; height: 300px; width: 300px;">
     <img class="card-img-top" src="${img}" alt="">
@@ -12,8 +11,16 @@ function addItemCard(img, itemName, desc) {
     </div>
 </div>`;
     $('item-list').innerHTML += codeBlock;
-    
+    itemsController.addItem(itemName, desc, img, Date());
     }
 
+function saveItems() {
+    const sampleItems = JSON.stringify(itemsController.items);
+    localStorage.setItem('items', sampleItems);
+}
 
-// localStorage.setItem('items', JSON.stringify(sampleItems));
+function populateData() {
+    parsed_list = JSON.parse(localStorage.items);
+    parsed_list.forEach(item => 
+        addItemCard(item.img, item.name, item.description))
+}
