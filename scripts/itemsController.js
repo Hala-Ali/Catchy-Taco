@@ -13,6 +13,8 @@ class ItemsController {
             createdAt: createdAt,
         };
         itemsController.items.push(item);
+        addItemCard(img, name, description);
+        
     }
 }
 
@@ -23,4 +25,3 @@ function loadItemsFromLocalStorage() {
         this.items = _items;
     }
 }
-

@@ -10,8 +10,8 @@ function addItemCard(img, itemName, desc) {
         <p class="card-text">${desc}</p>
     </div>
 </div>`;
-    $('item-list').innerHTML += codeBlock;
-    itemsController.addItem(itemName, desc, img, Date());
+    $('list-items').innerHTML += codeBlock;
+    // itemsController.addItem(itemName, desc, img, Date());
     }
 
 function saveItems() {
