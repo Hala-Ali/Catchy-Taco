@@ -26,15 +26,19 @@ public class ItemController {
         return itemService.all();
     }
 
+    @CrossOrigin
     @PostMapping
     public void save(@RequestBody ItemDto itemDto) {
         itemService.save(new Item (itemDto));
     }
 
+    @CrossOrigin
     @GetMapping("/{id}")
     public Optional<Item> findItemById(@PathVariable Integer id){
         return itemService.findById(id);
     }
+
+    @CrossOrigin
     @PutMapping( "/{id}" )
     public void update( @RequestBody ItemDto itemDto, @PathVariable Integer id )
     {
@@ -45,6 +49,7 @@ public class ItemController {
         itemService.save( item );
     }
 
+    @CrossOrigin
     @DeleteMapping( "/{id}" )
     public void delete( @PathVariable Integer id )
     {

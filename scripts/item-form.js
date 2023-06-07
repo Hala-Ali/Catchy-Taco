@@ -4,14 +4,12 @@ console.log(itemsController);
 
 const formsList = document.querySelectorAll('.form-control');
 
-
-
 function populate() {
     console.log("Adding item");
     let itemName = document.getElementById('item-name').value;
     let itemDesc = document.getElementById('item-desc').value;
     let itemImg = document.getElementById('item-img').value;
-    itemsController.addItem(itemName, itemDesc, itemImg, Date());
+    itemsController.addItem(itemName, itemDesc, itemImg); // removed date
     // for (i = 0; i <= formsList.length; i++) {
     //     let localVal = formsList[i];
     //     console.log(localVal.value);
