@@ -16,5 +16,5 @@ function populate() {
     //     // formsList[i].value = "";
     // }
 }
-document.getElementById('submit-item').style.backgroundColor = "red";
+document.getElementById('submit-item').style.backgroundColor = "cerulean";
 document.getElementById('submit-item').addEventListener('click', () => populate());

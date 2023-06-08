@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand navbar-light" width="100%" id="navbar">
-        <a class="navbar-brand" href="#">LOGO</a>
+        <a class="navbar-brand" href="#"><img src="tacologo.png"></a>
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
       </nav>
     <main class="container">
         <div class="row" id="log-in">
-            <div class="col-6">
+            <div id = "login-menus" class="col-6">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" class="form-control" name="username" id="username" placeholder="">
@@ -44,16 +44,7 @@
                 <h2>Please log in to edit the menu.</h2>
                 <img id="tacoplate" src="tacoplate.jpg" height="75%" width="75%">
         </div>
-        <div class="collapse" id="addItem">
-            <div class="row">
-                <div class="col">
-                    <div class="card card-body">
-                        fjdklasfjweoifjwaoi;
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
+        <div id="submit-form">
             <div class="form-group">
                 <label for="item-name">Item name</label>
                 <input type="text" class="form-control" name="item-name" id="item-name" placeholder="taco">
@@ -66,33 +57,11 @@
                 <label for="item-image">Item image link</label>
                 <input type="text" class="form-control" name="item-img" id="item-img" placeholder="example.jpg">
             </div>
-            <button class="btn btn-primary" type="button" id="submit-item">
+            <button class="btn btn-primary" type="button" style="background-color: blue" id="submit-item">
                 Submit
             </button>
         </div>
-        <div id = "list-items">
-            <div class="row" id="columns-holder">
-                <div class="col-lg-6 mb-4">
-                    <div class="card border-primary" style="margin-bottom: 20px; height: 300px; width: 300px;">
-                        <img class="card-img-top" src="tacoT.PNG" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Taco on us </h4>
-                            <p class="card-text">I have eaten so many tacos.</p>
-                        </div>
-                    </div>                        
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="card border-primary" style="margin-bottom: 20px; height: 300px; width: 300px;">
-                        <img class="card-img-top" src="tacoT.PNG" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Taco on us</h4>
-                            <p class="card-text">Taco tuesday</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+
     </main>
 </body>
 <script src="./scripts/itemsController.js"></script>

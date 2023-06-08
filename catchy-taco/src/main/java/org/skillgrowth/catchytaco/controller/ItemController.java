@@ -21,6 +21,7 @@ public class ItemController {
         this.itemService = itemService;
     }
 
+    @CrossOrigin
     @GetMapping("/all")
     public Iterable<Item> getItems() {
         return itemService.all();

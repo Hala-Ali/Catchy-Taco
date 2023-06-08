@@ -19,6 +19,25 @@ class ItemsController {
     }
 }
 
+function getMenuItems() {
+    // const data = {name, description, imageUrl};
+    fetch('http://localhost:8081/item/all', {
+        method: 'GET',
+        headers: {
+            'Content-type': 'application/json',
+        },
+        }).then(response => response.json())
+        .then(data => {
+            console.log("Success: ", data);
+            for (let taco of data) {
+                addItemCard(taco.imageUrl, taco.name, taco.description);
+            }
+        }).catch((error) => {
+            console.error('Error: ', error);
+        });
+}
+
+
 function save(name, description, imageUrl) {
     const data = {name, description, imageUrl};
     fetch('http://localhost:8081/item', {
@@ -93,3 +112,5 @@ function loadItemsFromLocalStorage() {
         this.items = _items;
     }
 }
+
+getMenuItems();
